@@ -1,0 +1,13 @@
+<div class="list">
+<h1>Edit To Do Task</h1>
+
+<%= render 'form' %>
+<div class="btn-group">
+<%= link_to 'Show', [@todo_item.todo_list, @todo_item] , :class=>"todo-btn blue" %>
+<%= link_to 'Back', todo_list_todo_items_path(@todo_item.todo_list), :class=>"todo-btn blue" %>
+</div>
+
+
+
+
+</div>

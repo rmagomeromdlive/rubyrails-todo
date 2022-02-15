@@ -1,0 +1,33 @@
+
+<div class="list center">
+<%= form_for([@todo_item.todo_list, @todo_item]) do |f| %>
+  <% if @todo_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@todo_item.errors.count, "error") %> prohibited this todo_item from being saved:</h2>
+
+      <ul>
+      <% @todo_item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_area :description , :placeholder => "Description" , class: "text-field" %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br />
+    <%= f.check_box :completed %>
+  </div>
+  
+
+
+  <div class="actions">
+    <%= f.submit class:"todo-btn blue-border" %>
+  </div>
+<% end %>
+
+
+
+</div>

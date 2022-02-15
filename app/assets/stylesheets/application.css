@@ -1,0 +1,216 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  background-color: #bcc3cc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+a {
+  text-emphasis: none;
+  text-decoration: none;
+}
+a:hover {
+  background-color: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  color: #4f8ce3;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #4f8ce3;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+  background-color: #ebf3ff;
+  border-radius: 10px;
+}
+
+.center {
+  justify-content: space-evenly;
+}
+
+.table-content {
+  width: inherit;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcc3cc;
+  margin-bottom: 8px;
+  border-radius: 3px;
+}
+
+.todo-card {
+  padding: 20px 90px 100px;
+  border-radius: 10px;
+  background-color: #e5e3dc;
+  box-shadow: 5px 8px 13px 5px rgba(229, 227, 220, 0.76);
+  text-align: center;
+}
+
+.todo-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.todo-btn {
+  padding: 4px 7px;
+  border-radius: 2px;
+  color: white !important;
+}
+
+.blue-border {
+  border: 1px solid #0d65d9;
+  color: black !important;
+}
+.blue-border:hover {
+  background-color: #0d65d9;
+  color: white !important;
+}
+.red-border {
+  border: 1px solid #bf343f;
+  color: black !important;
+}
+.red-border:hover {
+  background-color: #bf343f;
+  color: white !important;
+}
+
+.blue {
+  background-color: #0d65d9;
+}
+.red {
+  background-color: #bf343f;
+}
+.white {
+  background-color: whitesmoke;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.todo-list-item {
+  margin-top: 15px;
+}
+
+.form-control {
+  border: none;
+  width: 5px 50px;
+}
+
+.text-field {
+  border: none;
+  width: 10px 100px;
+}
+
+.select {
+  border: none;
+  padding: 5px 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.todo-title {
+  font-size: 1.5rem;
+}
+
+.todo-list-item li {
+  margin: 1rem;
+  padding: 6px 5px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.todo-task {
+  padding: 3px 10px;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+}
+
+.span {
+  color: #0d65d9;
+}
+
+.btn-group {
+  margin-top: 2rem;
+}

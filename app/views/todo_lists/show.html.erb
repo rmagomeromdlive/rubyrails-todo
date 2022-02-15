@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<div class="list">
+<p class="todo-title">
+  <%= @todo_list.title %>
+  <span class="span">Tasks</span>
+  
+</p>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_list.todo_items.each  do |todo_item| %>
+      <tr class="table-content">
+        <td class="todo-title"><%= link_to todo_item.description , edit_todo_list_todo_item_path(todo_item.todo_list, todo_item) %></td>
+        <td><%= todo_item.completed %></td>
+
+        <td><%= link_to 'Delete', [todo_item.todo_list, todo_item], method: :delete, data: { confirm: 'Are you sure?' } , :class=>"todo-btn red-border"  %></td>
+      
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="btn-group">
+<%= link_to 'Add Tasks', new_todo_list_todo_item_path(params[:id]), :class=>"todo-btn blue" %>
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) , :class=>"todo-btn blue" %>
+<%= link_to 'Back', todo_lists_path, :class=>"todo-btn blue" %>
+</div>
+
+</div>
+
